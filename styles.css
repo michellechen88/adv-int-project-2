@@ -1,6 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 .scroll-container{
@@ -50,12 +56,12 @@ img{
 
 .horizontal {
     height: auto; /* Ensures all images have the same height */
-    width: 55%; /* Width scales automatically based on aspect ratio */
+    width: 50%; /* Width scales automatically based on aspect ratio */
     aspect-ratio: 3/2; /* Maintains a consistent 4:6 ratio */
     object-fit: contain;
 }
 .vertical {
-    height: 50%; /* Ensures all images have the same height */
+    height: 45%; /* Ensures all images have the same height */
     width: auto; /* Width scales automatically based on aspect ratio */
     aspect-ratio: 2/3; /* Maintains a consistent 4:6 ratio */
     object-fit: contain;
@@ -68,21 +74,19 @@ img{
     align-items: center;
 }
 
-/* #text-only .chinese, #text-only .english {
-    display: flex;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0;
-} */
-
 .chinese {
     font-family: 'Noto Sans SC', sans-serif;
     font-size: 1rem;
     text-align: center;
     width: 50%;
+}
+
+#parents .chinese, #grandparents .chinese{
+    color: black;
+}
+
+#brother .chinese{
+    color: rgb(205, 205, 205);
 }
 
 .english {
@@ -91,4 +95,42 @@ img{
     text-align: left;
     width: 50%;
     padding-left: 12.5%;
+}
+
+#parents .english, #grandparents .english{
+    color: rgb(175, 175, 175);
+}
+
+#brother .english{
+    color: black;
+}
+
+#intro-card .text-wrapper{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#intro-card h1{
+    font-size: 2.5rem;
+}
+
+#intro-card .horizontal{
+    width: 100%;
+}
+
+#intro-card .vertical{
+    width: 100%;
+}
+
+.prev-arrow{
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+.next-arrow{
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
 }
