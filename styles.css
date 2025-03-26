@@ -9,6 +9,45 @@ body{
     overflow-y: hidden;
 }
 
+.scroll-section {
+    display: flex;
+    flex: 0 0 100vw;
+    scroll-snap-align: start;
+    transition: filter 1s ease-out; /* Smooth transition for the blur effect */
+}
+
+.scroll-section .text-wrapper,
+.scroll-section .image-wrapper img {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-section.show .text-wrapper {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s;
+}
+
+.scroll-section.show .image-wrapper img:first-child {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-section.show .image-wrapper img:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 3s; /* Delayed fade-in for second image */
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    width: 100vw;
+    height: 100vh;
+}
+
 .scroll-container{
     display: flex;
     flex-direction: row;
