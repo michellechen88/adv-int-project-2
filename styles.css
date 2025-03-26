@@ -129,8 +129,21 @@ img{
     align-items: center;
     padding-left: 5%;
 }
+
 .next-arrow{
     display: flex;
     align-items: center;
     padding-right: 5%;
+}
+
+.next-arrow a svg, .prev-arrow a svg{
+    fill: rgb(175, 175, 175);
+}
+
+.next-arrow a:hover svg, .prev-arrow a:hover svg {
+    fill: black;
+}
+
+.next-arrow a:active svg, .prev-arrow a:active svg{
+    fill: rgb(175, 175, 175);
 }
