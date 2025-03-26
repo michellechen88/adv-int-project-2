@@ -5,10 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heart to Heart</title>
 
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
   ">
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
@@ -16,262 +23,252 @@
 
   <!-- CSS Grid used in content-wrapper to arrange text and image elements -->
   <section id="grandparents">
-    <div class="scroll-container"> 
+    <div class="scroll-container">
       <section class="scroll-section">
         <div class="content-wrapper">
           <div class="image-wrapper">
-            <img src="photos/grandparentspics/gp-first.png">
+            <img class="horizontal" src="photos/grandparentspics/gp-first.png">
           </div>
           <div class="text-wrapper">
             <div class="chinese">
-              <p lang="zh-Hans">公公</p>
-              <p lang="zh-Hans">婆婆</p>
-
+              <h1 lang="zh-Hans">公公婆婆</h1>
             </div>
             <div class="english">
-              <h3>Grandpa & Grandma</h3>
+              <h1>Grandpa & Grandma</h1>
             </div>
+          </div>
         </div>
       </section>
 
       <section class="scroll-section">
         <div class="content-wrapper">
           <div class="image-wrapper">
-            <img src="photos/grandparentspics/gp-2.jpg">
+            <img class="vertical" src="photos/grandparentspics/gp-2.jpg">
           </div>
           <div class="text-wrapper">
             <div class="chinese">
               <p lang="zh-Hans">能在福州被你们养育，是我一直以来最感激的事情。那段日子里，我的每一天都充满了欢笑、幸福和爱。</p>
-
-
             </div>
             <div class="english">
               <p>Being raised by you two in Fuzhou is something I’m always so grateful for. There wasn’t a day where I wasn’t laughing, smiling, or filled with love. </p>
             </div>
+          </div>
         </div>
       </section>
-    </div>
-  </section>
 
-  <section class="scroll-section">
-    <div class="content-wrapper">
-      <div class="image-wrapper">
-        <img src="photos/grandparentspics/gp-3b.jpg">
-        <img src="photos/grandparentspics/gp-3a.jpg">
-      </div>
-      <div class="text-wrapper">
-        <div class="chinese">
-          <p lang="zh-Hans">从包容我的小脾气和在公公的车上留下咬痕的奇怪习惯，到一起吃美食、买新衣、假装走秀、在公园里滑轮，每一天和你们在一起，都让我深刻感受到什么是真正的爱与呵护。</p>
-
+    <section class="scroll-section">
+      <div class="content-wrapper">
+        <div class="image-wrapper">
+          <img class="horizontal" src="photos/grandparentspics/gp-3b.jpg">
+          <img class="horizontal" src="photos/grandparentspics/gp-3a.jpg">
         </div>
-        <div class="english">
-          <p>From putting up with my tantrums and weird habit of leaving bite marks in Grandpa’s car, to eating delicious foods, buying clothes, pretending to be a model, and rollerblading in the park, everyday spent with you two showed me what true love and care meant and felt like. </p>
+        <div class="text-wrapper">
+          <div class="chinese">
+            <p lang="zh-Hans">从包容我的小脾气和在公公的车上留下咬痕的奇怪习惯，到一起吃美食、买新衣、假装走秀、在公园里滑轮，每一天和你们在一起，都让我深刻感受到什么是真正的爱与呵护。</p>
+          </div>
+          <div class="english">
+            <p>From putting up with my tantrums and weird habit of leaving bite marks in Grandpa’s car, to eating delicious foods, buying clothes, pretending to be a model, and rollerblading in the park, everyday spent with you two showed me what true love and care meant and felt like. </p>
+          </div>
         </div>
-    </div>
-  </section>
-</div>
-</section>
-
-<section class="scroll-section">
-  <div class="content-wrapper">
-    <div class="image-wrapper">
-
-    </div>
-    <div class="text-wrapper">
-      <div class="chinese">
-        <p lang="zh-Hans"></p>
-
-
       </div>
-      <div class="english">
-        <p>Then I returned to the US.</p>
+    </section>
+
+    <section class="scroll-section">
+      <div class="content-wrapper">
+        <div class="image-wrapper">
+          
+        </div>
+        <!-- <div class="text-wrapper" id="text-only"> -->
+          <div class="text-wrapper">
+          <!-- <div class="chinese">
+            <p lang="zh-Hans">然后，我回到了美国。</p>
+          </div> -->
+          <div class="english">
+            <p>Then I returned to the US.</p>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section class="scroll-section">
+      <div class="content-wrapper">
+        <div class="image-wrapper">
+          <img class="vertical" src="photos/grandparentspics/gp-5.jpg">
+        </div>
+        <div class="text-wrapper">
+          <div class="chinese">
+            <p lang="zh-Hans">离开你们让我心碎不已。我想念你们，甚至常常落泪，但我知道，眼泪无法跨越我们之间那片遥远的大海。那时候，爸爸、妈妈和哥哥对我来说仿佛是陌生人。虽然他们是我的家人，但我的心早已留在你们身边。来到这个陌生的国家，我感到无依无靠，仿佛迷失了方向。</p>
+
+          </div>
+          <div class="english">
+            <p>Having to leave you two shattered my heart. I would cry for you both, but I knew my tears couldn’t bridge the vast ocean that now lay between us. At the time, Dad, Mom, and brother felt like strangers. Even though they were my family, my home was with you two and it felt like I was lost and alone in this new country. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <div class="content-wrapper">
+        <div class="image-wrapper">
+          <img class="vertical" src="photos/grandparentspics/gp-6.JPG">
+        </div>
+        <div class="text-wrapper">
+          <div class="chinese">
+            <p lang="zh-Hans">经过无数个泪水伴随的夜晚，我终于慢慢适应了新的生活，并且开始期待每一次和你们的通话。不久后，夏天到了，我终于可以飞回福州，与你们团聚。</p>
+            <p lang="zh-Hans">人们常说，快乐的时光总是转瞬即逝。没过多久，我又一次站在离别的路口，心里充满了不舍与心碎。</p>
+
+          </div>
+          <div class="english">
+            <p>After many tearful nights, I eventually adjusted to this new life and always looked forward to our phonecalls. Before long, summer came and I was able to fly back to reunite with you two in Fuzhou.</p>
+
+            <p>They say happy times always pass by quickly, and all too soon, I found myself facing the heart-wrenching farewell again.</p>
+          </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <div class="content-wrapper">
+        <div class="image-wrapper">
+          <img class="horizontal" src="photos/grandparentspics/gp-7.jpg">
+        </div>
+        <div class="text-wrapper">
+          <div class="chinese">
+            <p lang="zh-Hans">那些每年回福州的日子，曾是我最熟悉、最安心的习惯，我以为它们会一直延续下去。每次归来，都让我心安，也让我满怀期待，因为我知道又能见到你们了。</p>
+            <p lang="zh-Hans">然而，遗憾的是，这一切在我五年级时戛然而止。</p>
+
+          </div>
+          <div class="english">
+            <p>Those annual trips back felt like a comforting routine, something I thought would always be there. They brought me a sense of ease and filled me with excitement, knowing I’d get to see you both.</p>
+
+            <p>Sadly, they came to an unexpected end in the 5th grade.</p>
+          </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <div class="content-wrapper">
+        <div class="image-wrapper">
+          <img class="horizontal" src="photos/grandparentspics/gp-8.jpg">
+        </div>
+        <div class="text-wrapper">
+          <div class="chinese">
+            <p lang="zh-Hans">距离我上次回去已经十多年了，但我依然感激每一次你们来美国探望我的时光，也珍惜我们每一次的通话。</p>
+
+
+          </div>
+          <div class="english">
+            <p>It’s been more than 10 years since I’ve been back, but I’m still grateful for the times we see each other when you visit the States and for our phone calls. 
+            </p>
+          </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <div class="content-wrapper">
+        <div class="image-wrapper">
+          <img class="vertical" src="photos/grandparentspics/gp-9.jpg">
+        </div>
+        <div class="text-wrapper">
+          <div class="chinese">
+            <p lang="zh-Hans">我知道，随着岁月流逝，来美国变得越来越不容易，这让我更加珍惜和你们在一起的每一刻。你们愿意经历漫长的旅途来看我，对我来说，比任何言语都更珍贵。</p>
+
+          </div>
+          <div class="english">
+            <p>I know that traveling here has become increasingly difficult as the years pass, which makes me cherish the moments I have with you two even more. Your willingness to endure the long journey means more to me than words can express.</p>
+          </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <div class="content-wrapper">
+        <div class="image-wrapper">
+          <img class="horizontal" src="photos/grandparentspics/gp-10.JPG">
+        </div>
+        <div class="text-wrapper">
+          <div class="chinese">
+            <p lang="zh-Hans">谢谢你们总是确保我吃得好、保持健康。</p>
+            <p lang="zh-Hans">谢谢你们无论我们相隔多远，总是惦记着我。</p>
+            <p lang="zh-Hans">谢谢你们用无尽的爱把我抚养长大。</p>
+
+          </div>
+          <div class="english">
+            <p>Thank you for always making sure I ate well and stayed healthy.</p>
+
+            <p>Thank you for always thinking of me, no matter how far apart we are.</p>
+
+            <p>Thank you for raising me with endless love.</p>
+          </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <div class="content-wrapper">
+        <div class="image-wrapper">
+          <img class="horizontal" src="photos/grandparentspics/gp-11a.jpg">
+          <img class="vertical" src="photos/grandparentspics/gp-11b.jpg">
+        </div>
+        <div class="text-wrapper">
+          <div class="chinese">
+            <p lang="zh-Hans">你们能相信我现在已经22岁了吗？最近，我越来越深刻地感受到时间无情地流逝。你们的身体不再像以前那样强壮，这让我感到担忧，但我保证会努力工作，好好照顾你们，让我们能一起度过更多的美好时光。</p>
+
+          </div>
+          <div class="english">
+            <p>Can you believe I’m 22 years old now? Lately, I’ve been truly feeling just how time waits for no one. Your bodies aren’t as strong as they once were, and that worries me, but I promise to work hard and take care of you both so we can spend many more years together.</p>
+          </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <div class="content-wrapper">
+        <div class="image-wrapper">
+          <img class="horizontal" src="photos/grandparentspics/gp-12.jpg">
+        </div>
+        <div class="text-wrapper">
+          <div class="chinese">
+            <p lang="zh-Hans">还有太多我想和你们一起经历的事情。我希望你们能陪在我身边，见证我人生中的重要时刻—看着我建立自己的生活，组建家庭，并和你们一起创造更多的回忆。</p>
+
+          </div>
+          <div class="english">
+            <p>There’s still so much I want to experience with you by my side. I want you to be there for all the big moments ahead—to see me build a life, start a family, and create even more memories with you.</p>
+          </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <div class="content-wrapper">
+          <div class="image-wrapper">
+            <img class="vertical" src="photos/grandparentspics/gp-last.jpeg">
+          </div>
+          <div class="text-wrapper">
+            <div class="chinese">
+              <p lang="zh-Hans">公公婆婆，你们是我的一切，我希望你们永远知道，我是如此地爱你们。</p>
+
+            </div>
+            <div class="english">
+              <p>Grandpa and Grandma, you two are my everything and want you to always know that I love you so much.</p>
+            </div>
+          </div>
+          <div class="nav-arrow">
+            <a href="parents.html" class="next-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                </svg>
+            </a>
+           </div>
+          </div>
+        </section>
+
+        <!-- nav arrow to next page -->
+ 
   </div>
 </section>
-</div>
-</section>
-
-<section class="scroll-section">
-  <div class="content-wrapper">
-    <div class="image-wrapper">
-      <img src="photos/grandparentspics/gp-5.jpg">
-    </div>
-    <div class="text-wrapper">
-      <div class="chinese">
-        <p lang="zh-Hans"></p>
-
-      </div>
-      <div class="english">
-        <p>Having to leave you two shattered my heart. I would cry for you both, but I knew my tears couldn’t bridge the vast ocean that now lay between us. At the time, Dad, Mom, and brother felt like strangers. Even though they were my family, my home was with you two and it felt like I was lost and alone in this new country. </p>
-      </div>
-  </div>
-</section>
-</div>
-</section>
-
-<section class="scroll-section">
-  <div class="content-wrapper">
-    <div class="image-wrapper">
-      <img src="photos/grandparentspics/gp-6.JPG">
-    </div>
-    <div class="text-wrapper">
-      <div class="chinese">
-        <p lang="zh-Hans"></p>
-
-      </div>
-      <div class="english">
-        <p>After many tearful nights, I eventually adjusted to this new life and always looked forward to our phonecalls. Before long, summer came and I was able to fly back to reunite with you two in Fuzhou.</p>
-
-        <p>They say happy times always pass by quickly, and all too soon, I found myself facing the heart-wrenching farewell again.</p>
-      </div>
-  </div>
-</section>
-</div>
-</section>
-
-<section class="scroll-section">
-  <div class="content-wrapper">
-    <div class="image-wrapper">
-      <img src="photos/grandparentspics/gp-7.jpg">
-    </div>
-    <div class="text-wrapper">
-      <div class="chinese">
-        <p lang="zh-Hans"></p>
-
-      </div>
-      <div class="english">
-        <p>Those annual trips back felt like a comforting routine, something I thought would always be there. They brought me a sense of ease and filled me with excitement, knowing I’d get to see you both.</p>
-
-        <p>Sadly, they came to an unexpected end in the 5th grade.</p>
-      </div>
-  </div>
-</section>
-</div>
-</section>
-
-<section class="scroll-section">
-  <div class="content-wrapper">
-    <div class="image-wrapper">
-      <img src="photos/grandparentspics/gp-8.jpg">
-    </div>
-    <div class="text-wrapper">
-      <div class="chinese">
-        <p lang="zh-Hans"></p>
-
-
-      </div>
-      <div class="english">
-        <p>It’s been more than 10 years since I’ve been back, but I’m still grateful for the times we see each other when you visit the States and for our phone calls. 
-        </p>
-      </div>
-  </div>
-</section>
-</div>
-</section>
-
-<section class="scroll-section">
-  <div class="content-wrapper">
-    <div class="image-wrapper">
-      <img src="photos/grandparentspics/gp-9.jpg">
-    </div>
-    <div class="text-wrapper">
-      <div class="chinese">
-        <p lang="zh-Hans"></p>
-
-      </div>
-      <div class="english">
-        <p>I know that traveling here has become increasingly difficult as the years pass, which makes me cherish the moments I have with you two even more. Your willingness to endure the long journey means more to me than words can express.</p>
-      </div>
-  </div>
-</section>
-</div>
-</section>
-
-<section class="scroll-section">
-  <div class="content-wrapper">
-    <div class="image-wrapper">
-      <img src="photos/grandparentspics/gp-10.JPG">
-    </div>
-    <div class="text-wrapper">
-      <div class="chinese">
-        <p lang="zh-Hans"></p>
-
-      </div>
-      <div class="english">
-        <p>Thank you for always making sure I ate well and stayed healthy.</p>
-
-        <p>Thank you for always thinking of me, no matter how far apart we are.</p>
-
-        <p>Thank you for raising me with endless love.</p>
-      </div>
-  </div>
-</section>
-</div>
-</section>
-
-<section class="scroll-section">
-  <div class="content-wrapper">
-    <div class="image-wrapper">
-      <img src="photos/grandparentspics/gp-11a.jpg">
-      <img src="photos/grandparentspics/gp-11b.jpg">
-    </div>
-    <div class="text-wrapper">
-      <div class="chinese">
-        <p lang="zh-Hans"></p>
-
-      </div>
-      <div class="english">
-        <p>Can you believe I’m 22 years old now? Lately, I’ve been truly feeling just how time waits for no one. Your bodies aren’t as strong as they once were, and that worries me, but I promise to work hard and take care of you both so we can spend many more years together.</p>
-      </div>
-  </div>
-</section>
-</div>
-</section>
-
-<section class="scroll-section">
-  <div class="content-wrapper">
-    <div class="image-wrapper">
-      <img src="photos/grandparentspics/gp-12.jpg">
-    </div>
-    <div class="text-wrapper">
-      <div class="chinese">
-        <p lang="zh-Hans"></p>
-
-      </div>
-      <div class="english">
-        <p>There’s still so much I want to experience with you by my side. I want you to be there for all the big moments ahead—to see me build a life, start a family, and create even more memories with you.</p>
-      </div>
-  </div>
-</section>
-</div>
-</section>
-
-<section class="scroll-section">
-  <div class="content-wrapper">
-    <div class="image-wrapper">
-      <img src="photos/grandparentspics/gp-last.jpeg">
-    </div>
-    <div class="text-wrapper">
-      <div class="chinese">
-        <p lang="zh-Hans"></p>
-
-      </div>
-      <div class="english">
-        <p>Grandpa and Grandma, you two are my everything and want you to always know that I love you so much.</p>
-      </div>
-  </div>
-</section>
-</div>
-</section>
-
-  <!-- nav arrow to next page -->
-   <div class="nav-arrow">
-    <a href="parents.html" class="next-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
-            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
-        </svg>
-    </a>
-   </div>
 </body>
 </html>

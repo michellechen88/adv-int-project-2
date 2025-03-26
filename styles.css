@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-container{
+    display: flex;
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    width: 100vw;
+    height: 100vh;
+}
+
+.scroll-section {
+    display: flex;
+    flex: 0 0 100vw;
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 5% 0 0;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 5% 0% 5%;
+}
+
+.image-wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+img{
+    border: 10px solid white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.image-wrapper img:nth-child(2){
+    position: absolute;
+    z-index: 2;
+}
+
+.horizontal {
+    height: auto; /* Ensures all images have the same height */
+    width: 55%; /* Width scales automatically based on aspect ratio */
+    aspect-ratio: 3/2; /* Maintains a consistent 4:6 ratio */
+    object-fit: contain;
+}
+.vertical {
+    height: 50%; /* Ensures all images have the same height */
+    width: auto; /* Width scales automatically based on aspect ratio */
+    aspect-ratio: 2/3; /* Maintains a consistent 4:6 ratio */
+    object-fit: contain;
+}
+
+.text-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* #text-only .chinese, #text-only .english {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+} */
+
+.chinese {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+}
+
+.english {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1rem;
+    text-align: left;
+    width: 50%;
+    padding-left: 12.5%;
+}
